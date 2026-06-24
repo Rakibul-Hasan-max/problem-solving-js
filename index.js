@@ -5,6 +5,13 @@ const sumFunc = (a, b) => {
 
 console.log(sumFunc(4, 6));
 
+//area of a square
+const areaFunc = (a) => {
+    return (a*a);
+}
+
+console.log(areaFunc(7));
+
 
 //even or odd number
 const evenOddFunc = (num) => {
@@ -57,3 +64,16 @@ const factFunc = (n) =>{
 }
 
 console.log(factFunc(5));
+
+
+//sum of numbers 1 to N
+const sum1toN = (n) => {
+    let sum = 0;
+
+    for(let i = 1; i<=n; i++){
+        sum = sum + i;
+    }
+    return sum;
+}
+
+console.log(sum1toN(4));
