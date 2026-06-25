@@ -5,12 +5,15 @@ const sumFunc = (a, b) => {
 
 console.log(sumFunc(4, 6));
 
+
+
 //area of a square
 const areaFunc = (a) => {
     return (a*a);
 }
 
 console.log(areaFunc(7));
+
 
 
 //even or odd number
@@ -25,6 +28,7 @@ const evenOddFunc = (num) => {
 evenOddFunc(8);
 
 
+
 //max number
 const maxNum = (a, b) => {
     if (a>b){
@@ -37,6 +41,7 @@ const maxNum = (a, b) => {
 console.log(maxNum(15, 8));
 
 
+
 //max number
 const maxNumT = (a, b) => {
     return a>b ? a : b;
@@ -45,12 +50,14 @@ const maxNumT = (a, b) => {
 console.log(maxNumT(15, 83));
 
 
+
 //max 3 number
 const maxNum3 = (a, b, c) => {
     return Math.max(a, b, c);
 }
 
 console.log(maxNum3(5, 9, 23));
+
 
 
 //factorial
@@ -66,6 +73,7 @@ const factFunc = (n) =>{
 console.log(factFunc(5));
 
 
+
 //sum of numbers 1 to N
 const sum1toN = (n) => {
     let sum = 0;
@@ -79,12 +87,14 @@ const sum1toN = (n) => {
 console.log(sum1toN(4));
 
 
-// //sum of numbers 1 to N
+
+//sum of numbers 1 to N
 const sumN = (n)=> {
   return (n * (n + 1)) / 2;
 }
 
 console.log(sumN(4));
+
 
 
 // is the number prime or not
@@ -103,3 +113,27 @@ const primeNum = (n) => {
 }
 
 console.log(primeNum(17));
+
+
+
+//Calculate "simple interest" from Principle(P), Rate(R), Time(T)
+//SI = P*R*T / 100
+const simpleFunc = (P, R, T) => {
+    let SI = (P * R * T) / 100;
+    return SI;
+}
+
+console.log(simpleFunc(1000, 5, 2));
+
+
+
+//Given a person age, should get a driving licence or not
+const licenceFunc = (age) => {
+    if(age >= 18){
+        return "eligible"
+    }
+    else
+        return "not eligible"
+}
+
+console.log(licenceFunc(3));
