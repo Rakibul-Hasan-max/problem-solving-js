@@ -77,3 +77,29 @@ const sum1toN = (n) => {
 }
 
 console.log(sum1toN(4));
+
+
+// //sum of numbers 1 to N
+const sumN = (n)=> {
+  return (n * (n + 1)) / 2;
+}
+
+console.log(sumN(4));
+
+
+// is the number prime or not
+const primeNum = (n) => {
+
+    if(n<2){
+        return "non prime"
+    }
+
+    for(let i=2; i < n; i++){
+        if(n%i === 0){
+            return "non prime"
+        }
+    }
+    return "prime"
+}
+
+console.log(primeNum(17));
