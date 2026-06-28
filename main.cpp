@@ -103,7 +103,7 @@
 // using namespace std;
 
 // int main() {
-//     int n = 180;
+//     int n = 10;
 
 //     for(int i=1; i<=n; i++) {
 //         cout << i << " ";
@@ -115,20 +115,38 @@
 
 
 
-//1-n odd number sum
-#include <iostream>
-using namespace std;
+// //1-10 number print
+// #include <iostream>
+// using namespace std;
 
-int main() {
-    int n = 10;
-    int oddSum = 0;
+// int main() {
+//     int n = 10;
+//     int i = 1;
 
-    for(int i=1; i<=n; i++) {
-        if(i%2 != 0){
-            oddSum = oddSum+i;
-        }
-    };
+//     do {
+//         cout << i << " ";
+//         i++;
+//     } while (i <= n);
     
-    cout << oddSum << endl;
-    return 0;
-}
+//     cout << endl;
+//     return 0;
+// }
+
+
+// //1-n odd number sum
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 10;
+//     int oddSum = 0;
+
+//     for(int i=1; i<=n; i++) {
+//         if(i%2 != 0){
+//             oddSum = oddSum+i;
+//         }
+//     };
+    
+//     cout << oddSum << endl;
+//     return 0;
+// }
