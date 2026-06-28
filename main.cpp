@@ -41,20 +41,94 @@
 
 
 
-//sum of 2 numbers from users
+// //sum of 2 numbers from users
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int a, b;
+//     cout << "Enter a number: ";
+//     cin >> a;
+
+//     cout << "Enter a number: ";
+//     cin >> b;
+
+//     int sum = (a+b);
+
+//     cout << "Sum: " << sum << endl;
+//     return 0;
+// }
+
+
+
+// //eligible for vote or not
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int age;
+//     cout << "Enter your age: ";
+//     cin >> age;
+
+//     if(age >= 18){
+//         cout << "Eligible for vote" << endl;
+//     } else {
+//         cout << "Not eligible for vote" << endl;
+//     }
+
+//     return 0;
+// }
+
+
+
+// //1-10 number print
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int count = 1;
+
+//     while (count <= 10) {
+//         cout << count;
+//         count++;
+//     };
+
+//     cout << endl;
+//     return 0;
+// }
+
+
+// //1-10 number print
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 180;
+
+//     for(int i=1; i<=n; i++) {
+//         cout << i << " ";
+//     };
+    
+//     cout << endl;
+//     return 0;
+// }
+
+
+
+//1-n odd number sum
 #include <iostream>
 using namespace std;
 
 int main() {
-    int a, b;
-    cout << "Enter a number: ";
-    cin >> a;
+    int n = 10;
+    int oddSum = 0;
 
-    cout << "Enter a number: ";
-    cin >> b;
-
-    int sum = (a+b);
-
-    cout << "Sum: " << sum << endl;
+    for(int i=1; i<=n; i++) {
+        if(i%2 != 0){
+            oddSum = oddSum+i;
+        }
+    };
+    
+    cout << oddSum << endl;
     return 0;
 }
