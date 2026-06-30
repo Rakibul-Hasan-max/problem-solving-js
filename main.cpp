@@ -332,19 +332,116 @@
 
 
 
-//triangle pattern making using nested loop
+// //triangle pattern making using nested loop
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     char ch = 'A';
+
+//     for(int i=0; i<n; i++) {        //outer loop
+
+//         for(int j=0; j<i+1; j++) {    //inner loop
+//             cout << char(ch+i);
+//         };
+
+//         cout << endl;
+//     };
+    
+//     return 0;
+// }
+
+
+
+// //triangle pattern making using nested loop
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     for(int i=0; i<n; i++) {        //outer loop
+
+//         for(int j=1; j<=i+1; j++) {    //inner loop
+//             cout << j;
+//         };
+
+//         cout << endl;
+//     };
+    
+//     return 0;
+// }
+
+
+
+// //reverse triangle pattern
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     for(int i=0; i<n; i++) {        //outer loop
+
+//         for(int j=i+1; j>0; j--) {    //inner loop
+//             cout << j << " ";
+//         };
+
+//         cout << endl;
+//     };
+    
+//     return 0;
+// }
+
+
+
+
+// //floyd's triangle pattern
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     int num = 1;
+
+//     for(int i=0; i<n; i++) {
+
+//         for(int j=i+1; j>0; j--) {    //backwords => i+1
+//             cout << num << " ";
+//             num++;
+//         };
+
+//         cout << endl;
+//     };
+    
+//     return 0;
+// }
+
+
+
+
+//Inverted triangle pattern
 #include <iostream>
 using namespace std;
 
 int main() {
     int n = 5;
 
-    char ch = 'A';
+    int num = 1;
 
-    for(int i=0; i<n; i++) {        //outer loop
+    for(int i=0; i<n; i++) {
 
-        for(int j=0; j<i+1; j++) {    //inner loop
-            cout << char(ch+i);
+        //space
+        for(int j=0; j<i; j++) {
+            cout << " ";
+        };
+
+        //number
+        for(int j=0; j<n-i; j++) {
+            cout << (i+1);
         };
 
         cout << endl;
