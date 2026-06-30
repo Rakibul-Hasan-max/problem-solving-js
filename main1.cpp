@@ -423,26 +423,114 @@
 
 
 
-//Inverted triangle pattern
+// //Inverted triangle pattern
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     int num = 1;
+
+//     for(int i=0; i<n; i++) {
+
+//         //space
+//         for(int j=0; j<i; j++) {
+//             cout << " ";
+//         };
+
+//         //number
+//         for(int j=0; j<n-i; j++) {
+//             cout << (i+1);
+//         };
+
+//         cout << endl;
+//     };
+    
+//     return 0;
+// }
+
+
+
+// //Piramid pattern design
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     int n = 5;
+
+//     for(int i=0; i<n; i++) {
+
+//         //space : n-i-1
+//         for(int j=0; j<n-i-1; j++) {
+//             cout << " ";
+//         };
+
+//         //nums1 : i+1
+//         for(int j=1; j<=i+1; j++) {
+//             cout << j;
+//         };
+
+//         //nums2
+//         for(int j=i; j>0; j--) {
+//             cout << j;
+//         };
+
+//         cout << endl;
+//     };
+    
+//     return 0;
+// }
+
+
+
+//Hollow diamond pattern
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n = 5;
+    int n = 10;
 
-    int num = 1;
-
+    //top
     for(int i=0; i<n; i++) {
 
         //space
-        for(int j=0; j<i; j++) {
+        for(int j=0; j<n-i-1; j++) {
             cout << " ";
         };
 
-        //number
-        for(int j=0; j<n-i; j++) {
-            cout << (i+1);
+        cout << "*";
+        
+        if(i != 0) {
+            //spaces
+            for(int j=0; j<2*i-1; j++) {
+                cout << " ";
+            };
+
+            cout << "*";
+        }
+
+        cout << endl;
+    };
+
+    //bottom
+    for(int i=0; i<n-1; i++) {
+
+        //space
+        for(int j=0; j<i+1; j++) {
+            cout << " ";
         };
+
+        cout << "*";
+        
+        if(i != n-2) {
+            //spaces
+            for(int j=0; j<2*(n-i)-5; j++) {
+                cout << " ";
+            };
+
+            cout << "*";
+        }
 
         cout << endl;
     };
