@@ -58,28 +58,85 @@
 
 
 
-//fibonacci - 0 1 1 2 3 5 8
+// //fibonacci - 0 1 1 2 3 5 8
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+
+//     int n = 59;
+
+//     int first = 0;
+//     int second = 1;
+
+//     cout << first << " " << second << " ";
+
+//     for(int i = 3; i <= n; i++) {
+
+//         int next = first + second;
+
+//         cout << next << " ";
+
+//         first = second;
+//         second = next;
+//     }
+
+//     return 0;
+// }
+
+
+
+// //decimal to binary
+// #include <iostream>
+// using namespace std;
+
+// int decToBin(int decNum) {
+//     int ans = 0, pow = 1;
+
+//     while (decNum > 0) {
+//         int rem = decNum % 2;
+//         decNum = decNum/2;
+
+//         ans += (rem * pow);
+//         pow *= 10;
+//     }
+
+//     return ans;
+// }
+
+
+// int main() {
+//     int decNum = 50;
+
+//     cout << decToBin(decNum) << endl;
+//     return 0;
+// }
+
+
+
+
+//binary to decimal
 #include <iostream>
 using namespace std;
 
-int main() {
+int binToDec(int binNum) {
+    int ans = 0, pow = 1;
 
-    int n = 59;
+    while (binNum > 0) {
+        int rem = binNum % 10;
+        ans += (rem * pow);
 
-    int first = 0;
-    int second = 1;
-
-    cout << first << " " << second << " ";
-
-    for(int i = 3; i <= n; i++) {
-
-        int next = first + second;
-
-        cout << next << " ";
-
-        first = second;
-        second = next;
+        binNum /= 10;
+        pow *= 2;
     }
 
+    return ans;
+}
+
+
+int main() {
+    int decNum = 50;
+
+    cout << binToDec(1010) << endl;
     return 0;
 }

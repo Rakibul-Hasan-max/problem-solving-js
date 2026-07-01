@@ -137,3 +137,27 @@
 // }
 
 // console.log(licenceFunc(3));
+
+
+
+//fibonacci - 0 1 1 2 3 5 8
+const fibonacci = (n) => {
+
+    let first = 0;
+    let second = 1;
+
+    console.log(first);
+    console.log(second);
+
+    for(let i = 3; i <= n; i++){
+
+        let next = first + second;
+
+        console.log(next);
+
+        first = second;
+        second = next;
+    }
+}
+
+fibonacci(7);
