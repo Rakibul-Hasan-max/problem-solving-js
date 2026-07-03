@@ -104,7 +104,6 @@
 //     return ans;
 // }
 
-
 // int main() {
 //     int decNum = 50;
 
@@ -115,28 +114,49 @@
 
 
 
-//binary to decimal
+// //binary to decimal
+// #include <iostream>
+// using namespace std;
+
+// int binToDec(int binNum) {
+//     int ans = 0, pow = 1;
+
+//     while (binNum > 0) {
+//         int rem = binNum % 10;
+//         ans += (rem * pow);
+
+//         binNum /= 10;
+//         pow *= 2;
+//     }
+
+//     return ans;
+// }
+
+// int main() {
+//     int decNum = 50;
+
+//     cout << binToDec(1010) << endl;
+//     return 0;
+// }
+
+
+
+// //bitwise operator
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     cout << (10 << 2) << endl;
+//     return 0;
+// }
+
+
+
+//bitwise operator
 #include <iostream>
 using namespace std;
 
-int binToDec(int binNum) {
-    int ans = 0, pow = 1;
-
-    while (binNum > 0) {
-        int rem = binNum % 10;
-        ans += (rem * pow);
-
-        binNum /= 10;
-        pow *= 2;
-    }
-
-    return ans;
-}
-
-
 int main() {
-    int decNum = 50;
-
-    cout << binToDec(1010) << endl;
+    cout << (8 >> 2) << endl;
     return 0;
 }
