@@ -152,11 +152,41 @@
 
 
 
-//bitwise operator
+// //bitwise operator
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//     cout << (8 >> 2) << endl;
+//     return 0;
+// }
+
+
+
+
+//minimum and maxium number of an array
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int main() {
-    cout << (8 >> 2) << endl;
+    int nums[] = {5, 23, 53, -54, -32, 4};
+
+    int size = 6;
+
+    int smallest = INT_MAX;
+    int largest = INT_MIN;
+
+    for(int i=0; i<size; i++) {
+        // if(nums[i] < smallest) {
+        //     smallest = nums[i];
+        // }
+
+        smallest = min(nums[i], smallest);
+        largest = max(nums[i], largest);
+    }
+
+    cout << "Smallest = " << smallest << endl;
+    cout << "Largest = " << largest << endl;
     return 0;
 }
