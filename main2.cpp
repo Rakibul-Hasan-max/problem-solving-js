@@ -164,29 +164,85 @@
 
 
 
-//minimum and maxium number of an array
+// //minimum and maxium number of an array
+// #include <iostream>
+// #include <climits>
+// using namespace std;
+
+// int main() {
+//     int nums[] = {5, 23, 53, -54, -32, 4};
+
+//     int size = 6;
+
+//     int smallest = INT_MAX;
+//     int largest = INT_MIN;
+
+//     for(int i=0; i<size; i++) {
+//         // if(nums[i] < smallest) {
+//         //     smallest = nums[i];
+//         // }
+
+//         smallest = min(nums[i], smallest);
+//         largest = max(nums[i], largest);
+//     }
+
+//     cout << "Smallest = " << smallest << endl;
+//     cout << "Largest = " << largest << endl;
+//     return 0;
+// }
+
+
+
+
+// //linear search algorithm for find an element of array
+// #include <iostream>
+// using namespace std;
+
+// int linearSearch(int arr[], int sz, int target) {
+//     for(int i=0; i<sz; i++) {
+//         if(arr[i] == target) {  //found
+//             return i;
+//         }
+//     }
+//     return -1; //not found
+// }
+
+
+// int main() {
+//     int arr[] = {5, 23, 53, -54, 8, -32, 4};
+//     int sz = 7;
+//     int target = 5;
+
+//     cout << linearSearch(arr, sz, target) << endl;
+//     return 0;
+// }
+
+
+//array reverse
 #include <iostream>
-#include <climits>
 using namespace std;
 
+void reverseArray(int arr[], int sz) {
+    int start = 0, end = sz-1;
+
+    while (start < end) {
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }    
+}
+
+
 int main() {
-    int nums[] = {5, 23, 53, -54, -32, 4};
+    int arr[] = {1, 2, 3, 4, 5};
+    int sz = 5;
 
-    int size = 6;
+    reverseArray(arr, sz);
 
-    int smallest = INT_MAX;
-    int largest = INT_MIN;
-
-    for(int i=0; i<size; i++) {
-        // if(nums[i] < smallest) {
-        //     smallest = nums[i];
-        // }
-
-        smallest = min(nums[i], smallest);
-        largest = max(nums[i], largest);
+    for(int i=0; i<sz; i++) {
+        cout << arr[i] << " ";
     }
 
-    cout << "Smallest = " << smallest << endl;
-    cout << "Largest = " << largest << endl;
+    cout << endl;
     return 0;
 }
