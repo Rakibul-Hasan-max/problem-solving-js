@@ -218,31 +218,68 @@
 // }
 
 
-//array reverse
+// //array reverse
+// #include <iostream>
+// using namespace std;
+
+// void reverseArray(int arr[], int sz) {
+//     int start = 0, end = sz-1;
+
+//     while (start < end) {
+//         swap(arr[start], arr[end]);
+//         start++;
+//         end--;
+//     }    
+// }
+
+
+// int main() {
+//     int arr[] = {1, 2, 3, 4, 5};
+//     int sz = 5;
+
+//     reverseArray(arr, sz);
+
+//     for(int i=0; i<sz; i++) {
+//         cout << arr[i] << " ";
+//     }
+
+//     cout << endl;
+//     return 0;
+// }
+
+
+
+
+// //vector
+// //g++ -std=c++11 main2.cpp && ./a.out
+// #include <iostream>
+// #include <vector>
+// using namespace std;
+
+// int main() {
+//     vector<int> vec = {1,2,3}; 
+//     cout << vec[0] << endl;
+//     return 0;
+// }
+
+
+
+//vector use
+//g++ -std=c++11 main2.cpp && ./a.out
 #include <iostream>
+#include <vector>
 using namespace std;
 
-void reverseArray(int arr[], int sz) {
-    int start = 0, end = sz-1;
-
-    while (start < end) {
-        swap(arr[start], arr[end]);
-        start++;
-        end--;
-    }    
-}
-
-
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
-    int sz = 5;
+    vector<int> vec;
 
-    reverseArray(arr, sz);
+    vec.push_back(0);
+    vec.push_back(1);
+    vec.push_back(2);
+    vec.push_back(3);
+    vec.push_back(4);
 
-    for(int i=0; i<sz; i++) {
-        cout << arr[i] << " ";
-    }
-
-    cout << endl;
+    cout << vec.size() << endl;
+    cout << vec.capacity() << endl;
     return 0;
 }
